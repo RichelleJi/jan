@@ -170,5 +170,9 @@ describe('isLocalEngine', () => {
       const result = getLogoEngine('unknownEngine' as InferenceEngine)
       expect(result).toBeUndefined()
     })
+    it('should return correct logo path for InferenceEngine.featherless', () => {
+      const result = getLogoEngine(InferenceEngine.featherless)
+      expect(result).toBe('images/ModelProvider/nvidia.svg')
+    })
   })
 })

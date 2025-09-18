@@ -11,7 +11,8 @@ export const getLogoEngine = (engine: InferenceEngine | string) => {
       return 'images/ModelProvider/anthropic.svg'
     case InferenceEngine.nitro_tensorrt_llm:
       return 'images/ModelProvider/nitro.svg'
-
+    case InferenceEngine.featherless:
+      return 'images/ModelProvider/featherless.svg'
     case InferenceEngine.mistral:
       return 'images/ModelProvider/mistral.svg'
     case InferenceEngine.martian:
@@ -89,6 +90,8 @@ export const getDescriptionByEngine = (engine: InferenceEngine) => {
       return 'Creator of GPT models that set industry benchmarks. Their models excel across text, code, and image generation, consistently setting new standards for AI capabilities.'
     case InferenceEngine.openrouter:
       return 'A unified platform aggregating top AI models from various providers. Simplifies AI deployment by offering seamless access to multiple services through standardized integration.'
+    case InferenceEngine.featherless:
+      return 'A serverless hosting platform providing instant API access to 12,000+ open-source LLMs with flat-rate unlimited token pricing'
     default:
       return `Access models from ${getTitleByEngine(engine)} via their API.`
   }

@@ -22,6 +22,7 @@ export enum InferenceEngine {
   openai = 'openai',
   groq = 'groq',
   triton_trtllm = 'triton_trtllm',
+  featherless = 'featherless',
   nitro_tensorrt_llm = 'nitro-tensorrt-llm',
   cohere = 'cohere',
   nvidia = 'nvidia',
